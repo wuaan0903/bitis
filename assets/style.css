@@ -88,11 +88,12 @@ a{
 .menu-left ul li:hover{
     font-weight: 700;
 }
-.menu-right,.menu-right-mobile{
+.menu-right{
     font-size: 24px;
 }
 .menu-right-mobile{
     display: none;
+    font-size: 30px;
 }
 .menu-right i{
     margin-left: 40px;
