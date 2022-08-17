@@ -88,8 +88,11 @@ a{
 .menu-left ul li:hover{
     font-weight: 700;
 }
-.menu-right{
+.menu-right,.menu-right-mobile{
     font-size: 24px;
+}
+.menu-right-mobile{
+    display: none;
 }
 .menu-right i{
     margin-left: 40px;
@@ -201,6 +204,7 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col .policy-card{
         width: 100%;
+        margin-bottom: 20px;
 }
 }
 .policy-card{
@@ -313,5 +317,20 @@ a{
     .grid-col4{
         display: block;
         padding: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-right{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-left ul li{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-right-mobile{
+        display: block;
     }
 }
