@@ -88,12 +88,11 @@ a{
 .menu-left ul li:hover{
     font-weight: 700;
 }
-.menu-right{
+.menu-right,.menu-right-mobile{
     font-size: 24px;
 }
 .menu-right-mobile{
     display: none;
-    font-size: 30px;
 }
 .menu-right i{
     margin-left: 40px;
@@ -300,7 +299,6 @@ a{
     .grid-col1 .row{
         width: 100%;
         margin: 0;
-        height: auto;
     }
 }
 @media only screen and (max-width: 600px){
@@ -321,6 +319,11 @@ a{
     }
 }
 @media only screen and (max-width: 600px){
+    .grid-col4 .last-row{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
     .grid-col0 .menu-right{
         display: none;
     }
@@ -333,5 +336,10 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col0 .menu-right-mobile{
         display: block;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col5{
+        padding:0 20px;
     }
 }
