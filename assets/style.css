@@ -145,7 +145,11 @@ a{
 }
 .row-three-banner .row img{
     width: 100%;
-    transition: 0.3s;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
 }
 .row-three-banner .row img:hover{
     transform: scale(1.2);
@@ -174,15 +178,15 @@ a{
 }
 .product img{
     width: 100%;
+    left: 50%;
+    top: 0;
 }
 .product .img-hover{
     opacity: 0;
     transition: 0.4s;
-    position: absolute;
 }
 .product .image{
     position: relative;
-    height: 222px;
 }
 .product .img{
     position: absolute;
@@ -280,9 +284,6 @@ a{
 }
 .weekly-best .content .product:hover{
     box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
-}
-.weekly-best .content .product .image{
-    height: 260px;
 }
 @media only screen and (max-width: 600px){
     .grid-col .policy-card{
@@ -386,7 +387,7 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col1 .row{
         width: 100%;
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 }
 @media only screen and (max-width: 600px){
@@ -434,10 +435,5 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col6 .content{
         display: block;
-    }
-}
-@media only screen and (max-width: 600px){
-    .grid-col6 .content .product .image{
-        height: 315px;
     }
 }
