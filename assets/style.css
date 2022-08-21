@@ -20,7 +20,6 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
     font-family: "Raleway";
     background: #fff;
     transition: 0.4s;
@@ -35,13 +34,12 @@ body{
     width: 100%
 }
 .header{
-    display: flex;
     background-color: #fff;
-    height: 100px;
+    padding: 20px 0;
     left: 0;
     position: fixed;
     top: 0;
-    transition: height .3s ease;
+    transition:.3s ease;
     width: 100%;
     z-index: 999;
 }
@@ -60,7 +58,7 @@ body{
 }
 .sticky{
     box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
-    height: 70px;
+    padding: 10px 0;
 }
 ul{
     list-style: none;
@@ -96,6 +94,58 @@ a{
 }
 .menu-right i{
     margin-left: 40px;
+}
+.menu-mobile{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
+    overflow-y: auto;
+    display: none;
+}
+.menu-mobile ul{
+    padding: 20px;
+    display: block;
+}
+.menu-mobile ul li{
+    font-size: 16px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 50px;
+    word-wrap: normal;
+    border-bottom: 1px solid #ddd;
+}
+.menu-right-mobile .menu1{
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+.menu-right-mobile .close{
+    opacity: 1;
+}
+.toggle .menu1{
+    opacity: 1;
+    transition: 0.3s;
+}
+.toggle .close{
+    opacity: 0;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 600px){
+    .menu-mobile{
+        display: block;
+        position: fixed;
+        right: -100%;
+        height: 100vh;
+}
+}
+@media only screen and (max-width: 600px){
+    .open{
+        right: 0;
+        height: 100vh;
+}
 }
 .logo{
     display: flex;
@@ -142,12 +192,11 @@ a{
     overflow: hidden;
     transition: 0.3s;
     height: 206px;
+    display: flex;
+    justify-content: center;
 }
 .row-three-banner .row img{
-    width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: 50%;
     -webkit-backface-visibility: hidden;
     transition: all .3s;
 }
@@ -349,10 +398,6 @@ a{
     justify-content: space-between;
     padding: 40px;
 }
-.row{
-    min-width: 260px;
-
-}
 @media only screen and (max-width: 600px){
     .grid-col {
         display: block;
@@ -379,6 +424,7 @@ a{
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 600px){
     .grid-col1 .row{
         width: 100%;
@@ -410,6 +456,11 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col0 .menu-right{
         display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 {
+        padding: 0 20px;
     }
 }
 @media only screen and (max-width: 600px){
