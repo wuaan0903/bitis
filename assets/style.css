@@ -117,6 +117,9 @@ a{
     word-wrap: normal;
     border-bottom: 1px solid #ddd;
 }
+.menu-mobile ul li:hover{
+    background: #eee;
+}
 .menu-right-mobile .menu1{
     position: absolute;
     opacity: 0;
@@ -480,6 +483,12 @@ a{
 }
 @media only screen and (max-width: 600px){
     .grid-col6 .content{
-        display: block;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col6{
+        padding: 20px 0;
     }
 }
