@@ -381,6 +381,9 @@ a{
 .title-footer{
     padding: 20px 0;
 }
+.content-footer{
+    display: block;
+}
 .content-footer ul li{
     padding: 5px 0;
     font-size: 14px;
@@ -389,6 +392,9 @@ a{
 .content-footer ul li a{
     color: #656565;
 
+}
+.last-row .title-footer1{
+    display: none;
 }
 .logoFooter{
     width: 110px;
@@ -400,6 +406,16 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 40px;
+}
+.title-footer1{
+    display: flex;
+    justify-content: space-between;
+}
+.title-footer1 i{
+    display: none;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
 }
 @media only screen and (max-width: 600px){
     .grid-col {
@@ -441,6 +457,11 @@ a{
     }
 }
 @media only screen and (max-width: 600px){
+    .grid-col .content-footer{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
     .grid-col2 h2{
         font-size: 12px;
     }
@@ -452,8 +473,13 @@ a{
     }
 }
 @media only screen and (max-width: 600px){
-    .grid-col4 .last-row{
-        margin-top: 20px;
+    .grid-col4 .last-row .content-footer{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4 .last-row .title-footer1{
+        display: flex;
     }
 }
 @media only screen and (max-width: 600px){
@@ -474,6 +500,7 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col0 .menu-right-mobile{
         display: block;
+        font-size: 35px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -490,5 +517,10 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col6{
         padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer1 i{
+        display: flex;
     }
 }
