@@ -23,7 +23,6 @@ body{
     font-family: "Raleway";
     background: #fff;
     transition: 0.4s;
-    display: flex;
     max-width: 1620px;
     margin: 0 auto;
 }
@@ -377,6 +376,7 @@ a{
 .footer{
     display: flex;
     justify-content: space-between;
+    width: 60%;
 }
 .title-footer{
     padding: 20px 0;
@@ -393,6 +393,9 @@ a{
     color: #656565;
 
 }
+.last-row{
+    width: 30%;
+}
 .last-row .title-footer1{
     display: none;
 }
@@ -405,17 +408,39 @@ a{
 .footer1{
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding:0 100px 50px;
 }
 .title-footer1{
+    display: none;
+    justify-content: space-between;
+}
+.title-footer2{
     display: flex;
     justify-content: space-between;
+}
+.last-row .title-footer2{
+    display: none;
 }
 .title-footer1 i{
     display: none;
     font-size: 28px;
     align-items: center;
     text-align: center;
+}
+.title-footer2 i{
+    display: none;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+}
+.copyright{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background: #dfdfdf;
+}
+.copyright .logo-footer img{
+    width: 120px;
 }
 @media only screen and (max-width: 600px){
     .grid-col {
@@ -430,6 +455,16 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col3 .title{
         margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer1{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer2{
+        display: none;
     }
 }
 @media only screen and (max-width: 600px){
@@ -480,6 +515,11 @@ a{
 @media only screen and (max-width: 600px){
     .grid-col4 .last-row .title-footer1{
         display: flex;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4 .last-row,.grid-col{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 600px){
