@@ -16,16 +16,16 @@ toggle.addEventListener("click",()=>{
 
 $(document).ready(function()
 {
-    $(".grid-col>.row").click(function(){
-        $(this).children(".content-footer").slideToggle();
-        $(this).children(".title-footer1").children("i").toggleClass('bx-rotate-270')
+    $(".grid-col>.row>.title-footer1").click(function(){
+        $(this).parent(".row").children(".content-footer").slideToggle();
+        $(this).children("i").toggleClass('bx-rotate-270')
     })
 })
 
 $(document).ready(function()
 {
-    $(".last-row").click(function(){
-        $(this).children(".content-footer").slideToggle();
-        $(this).children(".title-footer1").children("i").toggleClass('bx-rotate-270')
+    $(".last-row>.title-footer1").click(function(){
+        $(this).parent(".last-row").children(".content-footer").slideToggle();
+        $(this).children("i").toggleClass('bx-rotate-270')
     })
 })
