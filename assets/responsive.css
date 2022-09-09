@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px){
+    .grid-col .policy-card{
+        width: 100%;
+        margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .grid-col {
+        display: block;
+    }
+    }
+@media only screen and (max-width: 600px){
+    .grid-col3{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col3 .title{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer1{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col3 .slider{
+        display: grid;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col .product{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .grid-col1 .row{
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col1 {
+        padding: 0;
+        display: block;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col .content-footer{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col2 h2{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4{
+        display: block;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4 .last-row .content-footer{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4 .last-row .title-footer1{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col4 .last-row,.grid-col{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-right{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 {
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-left ul li{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col0 .menu-right-mobile{
+        display: block;
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col5{
+        padding:0 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col6 .content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .grid-col6{
+        padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title-footer1 i{
+        display: flex;
+    }
+}
