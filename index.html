@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
     <title>Trang bán hàng trực tuyến của Biti's Việt Nam</title>
     <link rel="shortcut icon" type="image/jpg" href="https://cdn.haitrieu.com/wp-content/uploads/2022/02/Icon-Bitis.png">
 </head>
 <body>
     <div class="header">
-        <div class="container grid-col0">
+        <div class="menu-pc grid-col0">
             <div class="menu">
                 <div class="menu-left">
                     <ul>
@@ -48,24 +52,40 @@
         </div>
     </div>
     <div class="main grid-col5">
-        <div class="promotion-popup grid-col2">
-            <h2>Đồng giá ship chỉ 20.000 đồng cho đơn toàn quốc </h2>
+        <div class="owl-carousel owl-theme grid-col2" id="suggest-slider">
+            <div class="item"><h2>Đồng giá ship chỉ 20.000 đồng cho đơn toàn quốc </h2></div>
+            <div class="item"><h2>Ưu đãi giảm giá 10.000 đồng cho đơn hàng trả trước </h2></div>
+            <div class="item"><h2>Đồng giá ship chỉ 10.000 đồng cho đơn nội thành </h2></div>
         </div>
-        <div class="banner">
-            <img src="https://file.hstatic.net/1000230642/file/z3601683251924_4a799cd9f122a5d8bf962d0fc72c3952_0791922831db437997117734dc240acf.jpg" alt="">
+        <div id="slider"> 
+            <div class="container">
+                <div class="owl-carousel owl-theme" id="banner-slider">
+                    <div class="item">
+                        <a href=""><img src="https://file.hstatic.net/1000230642/file/z3601683251924_4a799cd9f122a5d8bf962d0fc72c3952_0791922831db437997117734dc240acf.jpg"></a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="https://file.hstatic.net/1000230642/file/web_banner___phien_ban_40_nam_5a1237144cf647d9930c714147b0b223.png"></a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="https://file.hstatic.net/1000230642/file/z3605900532098_b79c5c168b3cbec684c01e6895c74961_3a7bb4a6693f4086b5cb0ea79c13fb6b.jpg"></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="three-banner">
-            <div class="text grid-col2">
-                <h2>Hỗ trợ đổi size tại cửa hàng trong vòng 1 tuần</h1>
+            <div class="owl-carousel owl-theme grid-col2" id="suggest-slider-2">
+                <div class="item"><h2>Đồng giá ship chỉ 20.000 đồng cho đơn toàn quốc </h2></div>
+                <div class="item"><h2>Ưu đãi giảm giá 10.000 đồng cho đơn hàng trả trước </h2></div>
+                <div class="item"><h2>Đồng giá ship chỉ 10.000 đồng cho đơn nội thành </h2></div>
             </div>
-            <div class="row-three-banner grid-col1">
-                <div class="row">
+            <div class="owl-carousel owl-theme row-three-banner grid-col1">
+                <div class="row item">
                     <img src="https://file.hstatic.net/200000522597/file/2_510x275_b4821a2d66c04eb09a0403079c2fd5bb.jpg" alt="">
                 </div>
-                <div class="row">
+                <div class="row item">
                     <img src="https://file.hstatic.net/200000522597/file/3_510x275_b304bdd7130d489c9330c9dc2cdaadc2.jpg" alt="">
                 </div>
-                <div class="row">
+                <div class="row item">
                     <img src="https://file.hstatic.net/200000522597/file/4_510x275_63bbf2e07bbf4510bc673944c9ddf028.jpg" alt="">
                 </div>
             </div>
@@ -74,8 +94,8 @@
             <div class="title">
                 <h1>WHAT'S NEW</h1>
             </div>
-            <div class="slider grid-col">
-                <div class="product">
+            <div class="owl-carousel owl-theme slider grid-col">
+                <div class="item product">
                     <div class="image">
                         <div class="img">
                             <img src="https://product.hstatic.net/1000230642/product/dsg140600trg__2__3cfa1ff09bf3414c94b40e3f84585107_grande.jpg" alt="">
@@ -99,7 +119,7 @@
                             </button>
                         </div>
                 </div>
-                <div class="product">
+                <div class="item product">
                     <div class="image">
                         <div class="img">
                             <img src="https://product.hstatic.net/1000230642/product/dsmh10200xam__2__fd7a0050ed804686a07972c95945a08a_grande.jpg" alt="">
@@ -123,7 +143,7 @@
                             </button>
                         </div>
                 </div>
-                <div class="product">
+                <div class="item product">
                     <div class="image">
                         <div class="img">
                             <img src="https://product.hstatic.net/1000230642/product/dsmh10200den__2__bbe6991cfcc241a1858f54d2c81a2ced_grande.jpg" alt="">
@@ -147,7 +167,7 @@
                             </button>
                         </div>
                 </div>
-                <div class="product">
+                <div class="item product">
                     <div class="image">
                         <div class="img">
                             <img src="https://product.hstatic.net/1000230642/product/dswh10100xam__2__a50c3ea9f5154caa833d6fef1865e280_grande.jpg" alt="">
@@ -560,5 +580,7 @@
         </div>
     </div>
     <script src="./main.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./owl.carousel.js"></script>
 </body>
 </html>
