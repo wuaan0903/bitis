@@ -2,6 +2,10 @@ window.addEventListener("scroll",function(){
     var header = document.querySelector(".header")
     header.classList.toggle("sticky",window.scrollY>0)
 })
+window.addEventListener("scroll",function(){
+    var header = document.querySelector(".logo>a")
+    header.classList.toggle("sticky1",window.scrollY>0)
+})
 
 const toggle = document.querySelector(".menu-right-mobile"),
 menu = document.querySelector(".menu-mobile"),
@@ -18,6 +22,14 @@ $(document).ready(function()
 {
     $(".grid-col>.row>.title-footer1").click(function(){
         $(this).parent(".row").children(".content-footer").slideToggle();
+        $(this).children("i").toggleClass('bx-rotate-270')
+    })
+})
+
+$(document).ready(function()
+{
+    $(".menu-mobile>ul>li>.list").click(function(){
+        $(this).parent("li").children(".sub-list").slideToggle();
         $(this).children("i").toggleClass('bx-rotate-270')
     })
 })
