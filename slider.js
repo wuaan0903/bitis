@@ -99,10 +99,22 @@ $(document).ready(function() {
       loop:true,
       margin:10,
       responsive:{
-          600:{
-              items:3
-          }
-      }
+        0:{
+            items:1.5
+        },
+        600:{
+          items:2
+        },
+        768:{
+            items:2
+        },
+        1024:{
+          items:3
+        },
+        1239:{
+            items:3
+        }
+    }
   });
   // product slider
     $('.slider').owlCarousel({
@@ -110,6 +122,9 @@ $(document).ready(function() {
       loop:true,
       margin:30,
       autoplay:true,
+      animateIn : 'animate__slideInLeft',
+      animateOut : 'animate__slideOutRight',
+      nav:true,
       autoplayTimeout:5000,
       autoplayHoverPause:true,
       responsive:{
