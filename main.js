@@ -41,3 +41,24 @@ $(document).ready(function()
         $(this).children("i").toggleClass('bx-rotate-270')
     })
 })
+
+// Loader Page
+$(window).on('load', function(e) {
+    $('.loader').delay(1000).fadeOut('lows');
+});
+
+
+// Move on Top
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 300) {
+      $('.move-on-top i').fadeIn();
+    }
+    else{
+      $('.move-on-top i').fadeOut();
+    }
+});
+
+$('.move-on-top i').click(function() {
+  $('html, body').animate({scrollTop: 0}, 1500);
+});
+  
