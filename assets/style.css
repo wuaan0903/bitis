@@ -27,6 +27,23 @@ body{
     max-width: 1620px;
     margin: 0 auto;
 }
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader i {
+    font-size: 70px;
+    color:  #16A596;
+}
 
 .header{
     background-color: #fff;
@@ -145,6 +162,7 @@ a{
     display: none;
 }
 .menu-right i{
+    cursor: pointer;
     margin-left: 20px;
 }
 .search-box{
@@ -342,19 +360,37 @@ a{
     display: none;
 }
 .row-three-banner .row{
+    position: relative;
     border-radius: 5px;
     overflow: hidden;
     transition: 0.3s;
     display: flex;
     justify-content: center;
 }
+.row-three-banner .row .BannerEffect::after{
+    content: "";
+    display: inline-block;
+    width: 150%;
+    height: 80%;
+    position: absolute;
+    right: 30%;
+    top: -75%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: skewY(-50deg);
+    transition: all 0.5s ease 0s;
+}
+.row-three-banner .row .BannerEffect:hover::after{
+    right: -75%;
+    top: 120%;
+}
+
 .row-three-banner .row img{
     height: 100%;
     -webkit-backface-visibility: hidden;
     transition: all .3s;
 }
-.row-three-banner .row img:hover{
-    transform: scale(1.2);
+.row-three-banner .row .BannerEffect:hover img{
+    transform: scale(1.1);
 }
 .what-new{
     padding: 80px;
@@ -634,4 +670,23 @@ a{
 }
 .copyright .logo-footer img{
     width: 120px;
+}
+
+.move-on-top {
+    position: fixed;
+    right: 20px;
+    bottom: 45px;
+    z-index: 10;
+}
+.move-on-top i {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(#004da1,#16A596); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
 }
