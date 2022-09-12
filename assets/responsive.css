@@ -86,30 +86,37 @@
         width: 100%;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .grid-col0 .menu-right{
         display: none;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .grid-col0 {
         padding: 0 20px;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .grid-col0 .menu-left ul li{
         display: none;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .grid-col0 .menu-right-mobile{
-        display: block;
+        display:flex;
         font-size: 35px;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .grid-col5{
+        margin-top: 148px;
         padding:0 20px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .grid-col6 .content{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -129,7 +136,7 @@
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .menu-mobile{
         display: block;
         position: fixed;
@@ -137,9 +144,24 @@
         height: 100vh;
 }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .open{
         right: 0;
         height: 100vh;
 }
 }
+
+
+@media only screen and (max-width: 1200px){
+    .grid-col0 .search-box{
+        display: none;
+}
+}
+
+@media only screen and (max-width: 1200px){
+    .grid-col0 .search-box-mobile{
+        display: flex;
+        padding-bottom: 10px;
+}
+}
+
