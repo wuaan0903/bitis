@@ -116,6 +116,31 @@ $(document).ready(function() {
         }
     }
   });
+    //NEWS SLIDER
+    $('.News-Content').owlCarousel({
+
+      items:4,
+      loop:true,
+      nav:true,
+      margin:15,
+      responsive:{
+        0:{
+            items:1
+        },
+        600:{
+          items:2
+        },
+        768:{
+            items:2
+        },
+        1024:{
+          items:3
+        },
+        1239:{
+            items:4
+        }
+    }
+  });
   // product slider
     $('.slider').owlCarousel({
       items:1,
