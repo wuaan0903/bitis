@@ -7,14 +7,29 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky1",window.scrollY>0)
 })
 
+window.addEventListener("scroll",function(){
+    var loginForm = document.querySelector(".login-form")
+    loginForm.classList.toggle("scroll",window.scrollY>0)
+})
+
 const toggle = document.querySelector(".menu-right-mobile"),
 menu = document.querySelector(".menu-mobile"),
 iconToggle = document.querySelector(".menu1"),
 iconClose = document.querySelector(".close")
 
+
 toggle.addEventListener("click",()=>{
     menu.classList.toggle("open")
     toggle.classList.toggle("toggle")
+})
+
+
+const login=document.querySelector(".login")
+const loginShow=document.querySelector(".login-form")
+const login1=document.querySelector(".login")
+login.addEventListener("click",()=>{
+    loginShow.classList.toggle("show")
+    login1.classList.toggle("toggle1")
 })
 
 
