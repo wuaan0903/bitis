@@ -109,8 +109,13 @@
 }
 @media only screen and (max-width: 900px){
     .grid-col5{
-        margin-top: 148px;
+        margin-top: 100px;
         padding:0 20px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .grid-col5{
+        margin-top: 148px;
     }
 }
 @media only screen and (max-width: 1200px){
@@ -189,7 +194,19 @@
 }
 @media only screen and (max-width: 900px){
     .News{
-        padding: 0 20px;
+        padding: 0 20px 40px 20px;
 }
 }
+@media only screen and (max-width: 900px){
+    .Banner-Bottom{
+        display: flex;
+}
+}
+@media only screen and (max-width: 600px){
+    .Banner-Bottom img{
+        width: 250%;
+}
+}
+
+
 
