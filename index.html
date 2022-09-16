@@ -178,10 +178,55 @@
                         </label>
                     </div>
 
-                    <div>
-                        <i class='bx bx-user'></i>
-                        <i class='bx bx-heart' ></i>
-                        <i class='bx bx-cart'></i>
+                    <div style="display:flex;">
+                        <div class="login">
+                            <i class='bx bx-user user'></i>
+                            <i class='bx bx-x close'></i>
+                        </div>
+                        <div class="login-form show">
+                                <div class="site_account_header">
+                                    <h2 class="site_account_title heading">Đăng nhập tài khoản</h2>
+                                    <p class="site_account_legend">Nhập email và mật khẩu của bạn:</p>
+                                </div>
+                                <div class="site_account_inner">                                        
+                                    <form accept-charset="UTF-8" action="/account/login" id="customer_login" method="post">
+                                        <div class="form__input-wrapper form__input-wrapper--labelled">
+                                            <input type="email" id="login-customer[email]" class="form__field form__field--text" name="customer[email]" required="required">
+                                            <label for="login-customer[email]" class="form__floating-label">Email</label>
+                                        </div>
+                                        <div class="form__input-wrapper form__input-wrapper--labelled">  
+                                            <input type="password" id="login-customer[password]" class="form__field form__field--text" name="customer[password]" required="required" autocomplete="current-password">
+                                            <label for="login-customer[password]" class="form__floating-label">Mật khẩu</label>						                       
+                                            <div class="sitebox-recaptcha">
+                                                This site is protected by reCAPTCHA and the Google
+                                                <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+                                                and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="form__submit button dark" id="form_submit-login">Đăng nhập</button>
+                                    </form>
+                                    <div class="site_account_secondary-action">
+                                        <p>Khách hàng mới? 
+                                            <a class="link" href="">Tạo tài khoản</a>
+                                        </p>
+                                        <p>Quên mật khẩu? 
+                                            <a class="link" href="">Khôi phục đăng nhập</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        
+                        <div class="favourite">
+                            <i class='bx bx-heart' ></i>
+                        </div>
+                        
+                        <div class="shop">
+                            <i class='bx bx-cart'></i>
+                            <div class="shop-form show">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="menu-right-mobile toggle">
@@ -395,21 +440,21 @@
                 <h1>WHAT'S NEW</h1>
             </div>
             <div class="owl-carousel owl-theme slider grid-col">
-                <div class="item product">
+                <div class="product">
                     <div class="image">
                         <div class="img">
-                            <img src="https://product.hstatic.net/1000230642/product/dsg140600trg__2__3cfa1ff09bf3414c94b40e3f84585107_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh09700trg__2__18c92ba0263a4ebabde7c7b00dfd4d0d_grande.jpg" alt="">
                         </div>
                         <div class="img-hover">
-                            <img src="https://product.hstatic.net/1000230642/product/dsg140600trg__5__91fa530dd68545438cbc9f4f6c6f24ef_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh09700trg__5__669aaa867ce24e848d2e3d6c82ec1dc1_grande.jpg" alt="">
                         </div>
                     </div>
                     <div class="size-color">
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>[Phiên Bản Kỷ Niệm 40 Năm] Giày Thể Thao Nam Hunter X DSMH09700TRG (Trắng)</h2>
+                    <h3>1,236,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -419,7 +464,31 @@
                             </button>
                         </div>
                 </div>
-                <div class="item product">
+                <div class="product">
+                    <div class="image">
+                        <div class="img">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh09700doo__2__c78c6dffcacc4c2e9b66b4a2e3d22330_grande.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh09700doo__5__30182ed07d804cd3977ed39bf19e5303_grande.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="size-color">
+                        <div class="size">+10 size</div>
+                        <div class="color">+3 Màu sắc</div>
+                    </div>
+                    <h2>[Phiên Bản Kỷ Niệm 40 Năm] Giày Thể Thao Nam Hunter X DSMH09700DOO (Đỏ)</h2>
+                    <h3>1,236,000 đ</h2>
+                        <div class="button">
+                            <button class="btn">
+                                <div class="btn__icon">
+                                    <i class="bx bx-cart bx-tada"></i>
+                                </div>
+                                <div class="btn__txt">chọn mua</div>
+                            </button>
+                        </div>
+                </div>
+                <div class="product">
                     <div class="image">
                         <div class="img">
                             <img src="https://product.hstatic.net/1000230642/product/dsmh10200xam__2__fd7a0050ed804686a07972c95945a08a_grande.jpg" alt="">
@@ -432,8 +501,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam Hunter Tennis DSMH10200XAM (Xám)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -443,21 +512,21 @@
                             </button>
                         </div>
                 </div>
-                <div class="item product">
+                <div class="product">
                     <div class="image">
                         <div class="img">
-                            <img src="https://product.hstatic.net/1000230642/product/dsmh10200den__2__bbe6991cfcc241a1858f54d2c81a2ced_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh10200trg__2__72f64d95e47a49b58b0aeb40ae026ec8_grande.jpg" alt="">
                         </div>
                         <div class="img-hover">
-                            <img src="https://product.hstatic.net/1000230642/product/dsmh10200den__5__6f986d14a3ca43b0ac7c94ed8c68809a_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsmh10200trg__5__7e088310d2324579a23653c064e824b0_grande.jpg" alt="">
                         </div>
                     </div>
                     <div class="size-color">
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam Hunter Tennis DSMH10200TRG (Trắng)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -467,21 +536,21 @@
                             </button>
                         </div>
                 </div>
-                <div class="item product">
+                <div class="product">
                     <div class="image">
                         <div class="img">
-                            <img src="https://product.hstatic.net/1000230642/product/dswh10100xam__2__a50c3ea9f5154caa833d6fef1865e280_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsm075033xam__2__eb67a70ccbe444e096752a444748505e_grande.jpg" alt="">
                         </div>
                         <div class="img-hover">
-                            <img src="https://product.hstatic.net/1000230642/product/dswh10100xam__5__2cd8aad2f4984e62acd0f123a5d8ece3_grande.jpg" alt="">
+                            <img src="https://product.hstatic.net/1000230642/product/dsm075033xam__5__d25de82488fa4773b20b5f06fade05d5_grande.jpg" alt="">
                         </div>
                     </div>
                     <div class="size-color">
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075033XAM (Xám)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -491,6 +560,7 @@
                             </button>
                         </div>
                 </div>
+                
             </div>
         </div>
         <div class="seaction grid-col">
@@ -548,8 +618,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>[Phiên Bản Kỷ Niệm 40 Năm] Giày Thể Thao Nam Hunter X DSMH09700TRG (Trắng)</h2>
+                    <h3>1,236,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -572,8 +642,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>[Phiên Bản Kỷ Niệm 40 Năm] Giày Thể Thao Nam Hunter X DSMH09700DOO (Đỏ)</h2>
+                    <h3>1,236,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -596,8 +666,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam Hunter Tennis DSMH10200XAM (Xám)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -620,8 +690,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam Hunter Tennis DSMH10200TRG (Trắng)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -644,8 +714,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075033XAM (Xám)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -668,8 +738,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075033TRG (Trắng)</h2>
+                    <h3>751,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -716,8 +786,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075200XNH (Xanh Nhớt)</h2>
+                    <h3>417,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -740,8 +810,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075200TRG (Trắng)</h2>
+                    <h3>417,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -764,8 +834,8 @@
                         <div class="size">+10 size</div>
                         <div class="color">+3 Màu sắc</div>
                     </div>
-                    <h2>Giày Thể Thao Bé Gái Cool Kids DSG140600TRG (Trắng)</h2>
-                    <h3>486,000 đ</h2>
+                    <h2>Giày Thể Thao Nam DSM075200DEN (Đen)</h2>
+                    <h3>417,000 đ</h2>
                         <div class="button">
                             <button class="btn">
                                 <div class="btn__icon">
@@ -782,7 +852,7 @@
         <img src="https://file.hstatic.net/200000522597/file/2_1920x750_8d8ae5ef81364f288889339c63147dbb.jpg" alt="">
     </div>
     <div class=" News">
-        <h3>TIN TỨC BITIS</h3>
+        <h3>BLOG POSTS</h3>
         <div class="owl-carousel owl-theme News-Content">
             <div class="item">
                 <div class="item-img"><img src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_grande.png" alt=""></div>
