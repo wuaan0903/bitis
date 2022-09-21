@@ -11,6 +11,10 @@ window.addEventListener("scroll",function(){
     var loginForm = document.querySelector(".login-form")
     loginForm.classList.toggle("scroll",window.scrollY>0)
 })
+window.addEventListener("scroll",function(){
+    var loginForm = document.querySelector(".shop-form")
+    loginForm.classList.toggle("scroll",window.scrollY>0)
+})
 
 const toggle = document.querySelector(".menu-right-mobile"),
 menu = document.querySelector(".menu-mobile"),
@@ -32,6 +36,11 @@ login.addEventListener("click",()=>{
     login1.classList.toggle("toggle1")
 })
 
+const shop = document.querySelector(".shop-form")
+const iconShop = document.querySelector(".shop")
+iconShop.addEventListener("click",()=>{
+    shop.classList.toggle("show")
+})
 
 $(document).ready(function()
 {
@@ -57,6 +66,7 @@ $(document).ready(function()
     })
 })
 
+
 // Loader Page
 $(window).on('load', function(e) {
     $('.loader').delay(1000).fadeOut('lows');
@@ -76,4 +86,81 @@ $(window).scroll(function() {
 $('.move-on-top i').click(function() {
   $('html, body').animate({scrollTop: 0}, 1500);
 });
-  
+
+// Show Search Suggest
+$('.search-box>input').focus( function() {
+    $('.search-box-show').fadeIn();
+});
+$('.search-box>input').blur( function() {
+    $('.search-box-show').fadeOut();
+});
+
+$('.login').blur(function(){
+    $('.login-form').fadeOut();
+})
+
+// ADD TO CARD
+var data=[];
+
+function add(btn){
+    var product = btn.parentElement.parentElement.children;
+    var title = product[2].innerHTML
+    var price = product[3].innerHTML
+    var img = product[0].children[0].innerHTML
+
+    var item={
+        Title : title,
+        Price : price,
+        Image : img
+    }
+    data.push(item)
+    render()
+    total1()
+    swal("Thành Công !", "Bạn đã thêm thành công 1 sản phẩm vào giỏ hàng", "success");
+}
+function render(){
+    table=``
+    for(let i=0;i<data.length;i++)
+    {
+        table = table +`<div class="item">
+        <div class="img">
+            ${data[i].Image}
+        </div>
+        <div style="
+        width: 100%;
+    ">
+            <h2 style="
+            padding-right: 30px;
+        ">${data[i].Title}</h2>
+        <button onclick="deleteItem(${i})" class="delete" ><i class='bx bx-x'></i></button>
+            <h3>${data[i].Price}</h2>
+        </div>
+    </div>`
+    }    
+    document.querySelector(".count-number").innerHTML =data.length
+    document.getElementById("cart-view").innerHTML = table;
+}
+
+function deleteItem(index){
+    for(let i=0;i<data.length;i++)
+    {
+        if(index==i)
+        {
+            data.splice(i,1);
+            render()
+            total1()
+        }
+    }
+}
+function total1(){
+    var total=0;
+    for(let j=0;j<data.length;j++)
+    {
+        var xau = data[j].Price;
+        var split = xau.replace(/[^0-9]/g, '');
+        total=total+Number(split);
+    }
+    var xau1= total.toLocaleString("en");
+    xau1 = xau1 +" đ"
+    document.querySelector(".total-money").innerHTML = xau1
+}
